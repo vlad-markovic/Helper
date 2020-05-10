@@ -1,13 +1,11 @@
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![API](https://img.shields.io/badge/API-14%2B-brightgreen.svg?style=flat)](https://source.android.com/setup/start/build-numbers)
+### Set Of Helper Function Libraries
 
 ```groovy
 implementation "com.vladmarkovic.helper:coroutines:$version"
 ```
 
-________________________________________________________________________
-
 ## License
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ```
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
