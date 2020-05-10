@@ -1,5 +1,18 @@
+*.iml
 .gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
 .DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+
 # Built application files
 *.apk
 *.ap_
@@ -28,7 +41,6 @@ proguard/
 # Android Studio captures folder
 captures/
 # Intellij
-*.iml
 .idea/workspace.xml
 .idea/libraries
 # idea project files
@@ -38,13 +50,3 @@ captures/
 *.iws
 # Keystore files
 *.jks
-
-!*.secret
-secrets/key
-secrets/keystore.properties
-secrets/playstore_secret.json
-secrets/google_drive_keyfile.json
-
-scripts/dont-commit-to-repo.sh
-
-fastlane/report.xml
