@@ -1,0 +1,40 @@
+apply plugin: 'com.jfrog.bintray'
+
+group lib.package
+version lib.version
+
+project.ext {
+    mavGitUrl = "https://github.com/vlad-markovic/Helper.git"
+    mavProjectName = "CoroutinesHelper"
+    mavLibraryLicenses = ["Apache-2.0": 'http://www.apache.org/licenses/LICENSE-2.0.txt']
+    mavLibraryDescription = "Kotlin Coroutines Helper Functions."
+    mavPublishToMavenLocal = true
+    mavSiteUrl = "https://github.com/vlad-markovic/Helper/tree/master/coroutines"
+}
+
+def properties = new Properties()
+properties.load(project.rootProject.file("local.properties").newDataInputStream())
+
+bintray {
+    user = properties.getProperty("bintray.user")
+    key = properties.getProperty("bintray.apikey")
+    publications = ['mavenPublish']
+    configurations = ['archives']
+    override = true
+    pkg {
+        repo = 'maven'
+        name = lib.package
+        description = mavLibraryDescription
+        publicDownloadNumbers = true
+        licenses = ['Apache-2.0']
+        vcsUrl = mavGitUrl
+        version {
+            name = lib.version
+            desc = "v$name"
+            released = new Date()
+            vcsTag = desc
+        }
+    }
+}
+
+apply from: 'https://raw.githubusercontent.com/sky-uk/gradle-maven-plugin/master/gradle-mavenizer.gradle'

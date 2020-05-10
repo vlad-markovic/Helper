@@ -11,8 +11,11 @@ dependencies {
 }
 
 ext.lib = [
-        'version': (new JsonSlurper().parseText(project.rootProject.file('coroutineshelper/package.json').text))["version"]
+        'package': 'com.vladmarkovic.helper.coroutines',
+        'version': (new JsonSlurper().parseText(project.rootProject.file('coroutines/package.json').text))["version"]
 ]
 
 sourceCompatibility = "7"
 targetCompatibility = "7"
+
+apply from: 'publish.gradle'

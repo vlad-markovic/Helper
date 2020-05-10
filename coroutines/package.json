@@ -1,5 +1,5 @@
 {
-  "name": "coroutineshelper",
+  "name": "coroutines",
   "package-name": "com.vladmarkovic.helper.coroutines",
   "project-type": "Kotlin Library",
   "version": "1.0.0",
