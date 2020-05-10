@@ -1,0 +1,9 @@
+{
+  "name": "coroutineshelper",
+  "package-name": "com.vladmarkovic.helper.coroutines",
+  "project-type": "Kotlin Library",
+  "version": "1.0.0",
+  "description": "Coroutines Helper Functions",
+  "author": "Vlad Markovic",
+  "license": "Apache-2.0"
+}
