@@ -3,13 +3,13 @@
 ## Coroutines Helper Functions - small Kotlin library
 
 ```groovy
-implementation "com.vladmarkovic.helper:coroutines:$version"
+implementation "com.vladmarkovic.helper:coroutines:1.0.1"
 ```
 
 This is a small set of helper functions which enable writing and handling coroutines in a nice readable way such as:
 
 ```kotlin
-fun nicelyWrittenCoroutine() {
+fun nicelyLaunchedCoroutine() {
     launchHandleOnMain(
         initially = ::showLoadingIndicator,
         suspended = {

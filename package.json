@@ -1,8 +1,8 @@
 {
-  "name": "helper",
+  "name": "all",
   "package-name": "com.vladmarkovic.helper",
   "project-type": "Helper Libraries",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Various Helper Functions",
   "author": "Vlad Markovic",
   "license": "Apache-2.0"

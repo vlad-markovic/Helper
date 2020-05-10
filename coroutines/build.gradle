@@ -11,7 +11,7 @@ dependencies {
 }
 
 ext.lib = [
-        'package': 'com.vladmarkovic.helper.coroutines',
+        'package': 'com.vladmarkovic.helper',
         'version': (new JsonSlurper().parseText(project.rootProject.file('coroutines/package.json').text))["version"]
 ]
 

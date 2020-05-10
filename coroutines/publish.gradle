@@ -5,7 +5,7 @@ version lib.version
 
 project.ext {
     mavGitUrl = "https://github.com/vlad-markovic/Helper.git"
-    mavProjectName = "CoroutinesHelper"
+    mavProjectName = "${lib.package}:coroutines"
     mavLibraryLicenses = ["Apache-2.0": 'http://www.apache.org/licenses/LICENSE-2.0.txt']
     mavLibraryDescription = "Kotlin Coroutines Helper Functions."
     mavPublishToMavenLocal = true
@@ -23,7 +23,7 @@ bintray {
     override = true
     pkg {
         repo = 'maven'
-        name = lib.package
+        name = mavProjectName
         description = mavLibraryDescription
         publicDownloadNumbers = true
         licenses = ['Apache-2.0']
